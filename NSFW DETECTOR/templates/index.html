@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <h1>NSFW Detector</h1>
+        <input type="file" id="file1">
+        <button onclick="uploadImage()">Submit</button>
+        <h2 id="result"></h2>
+
+        <script>
+            async function uploadImage() {
+                const file = document.getElementById('file1').files[0];
+                const formData = new FormData();
+                formData.append('file1', file);
+
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                console.log(data);  // add this
+                const top = data[0];
+                document.getElementById('result').innerText = `${top.label}: ${(top.score * 100).toFixed(1)}%`;
+            }
+        </script>
+    </body>
+</html>

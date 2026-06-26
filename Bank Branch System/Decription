@@ -1,0 +1,22 @@
+🏦 Week — OOP Weekend Project: Bank Branch System
+Goal: Build a simulated bank branch in Python using Object-Oriented Programming.
+You'll build 4 classes:
+
+BankAccount — the base account with deposit, withdraw, and balance
+SavingsAccount — inherits from BankAccount, adds an apply_interest method
+Customer — has a name and a list of accounts, can open new ones
+Bank — manages all customers, can add/find customers and report total funds held
+
+Requirements:
+
+A customer can hold multiple accounts
+Withdrawals should not allow the balance to go negative — print a warning if attempted
+The Bank class should be able to print a summary: each customer and their total balance
+SavingsAccount.apply_interest(rate) should increase the balance by a percentage (e.g. 5% → balance × 1.05)
+
+Stretch goals (if you finish early):
+
+Add a TransactionHistory to BankAccount that logs every deposit and withdrawal
+Add a transfer(amount, target_account) method between two accounts
+
+Deliverable: A single bank.py file. At the bottom, write a small script that creates a bank, adds 2–3 customers, opens accounts, makes transactions, and prints the summary.

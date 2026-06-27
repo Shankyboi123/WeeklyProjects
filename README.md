@@ -3,7 +3,17 @@ This is a one year challnege I'm going to be embarking on where I will be comple
 
 I hope you enjoy, some weeks will be alot easier than others but I want to push myself to create one new thing every week.  
 
-#Week 3: June 22nd 
+#Week 3: June 22nd
+- Stock Visualizer:
+  Wanted to get into data after a couple of weeks of pure logic-building. Pulled real
+  stock data and plotted price against trading volume on a dual-axis chart, then
+  pushed further and compared % price change across multiple tickers (AAPL, TSLA, NVDA).
+
+  Skills:
+  - Python
+  - pandas
+  - matplotlib
+  - Working with real-world data (yfinance)
 
 #Week 2: June 15th 
 - Bank Branch System:

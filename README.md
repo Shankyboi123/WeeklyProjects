@@ -1,16 +1,11 @@
 # WorldHello
-Collation of all my projects 
+This is a one year challnege I'm going to be embarking on where I will be completing one project every week. 
 
-#Week 1
-- NSFW Detector - LMAO was tryna make a hotdog detector but no image classfication models were deployed on Hugging Face and this was the first avaliable one, I'm not a weirdo.
+I hope you enjoy, some weeks will be alot easier than others but I want to push myself to create one new thing every week.  
 
-  Skills:
-  - APIs
-  - Python
-  - HTML + CSS
-  - JavaScript 
+#Week 3: June 22nd 
 
-#Week 2: 
+#Week 2: June 15th 
 - Bank Branch System:
   Exam prep got alittle piled up this week and ran short on time so felt like keeping it basic and hitting up the fundamentals again so did a little objet orientated programming :)
 
@@ -27,3 +22,15 @@ Collation of all my projects
 
   EDIT:
   It felt alittle too basic so working on making it a web app 
+
+
+#Week 1: June 8th  
+- NSFW Detector - LMAO was tryna make a hotdog detector but no image classfication models were deployed on Hugging Face and this was the first avaliable one, I'm not a weirdo.
+
+  Skills:
+  - APIs
+  - Python
+  - HTML + CSS
+  - JavaScript 
+
+

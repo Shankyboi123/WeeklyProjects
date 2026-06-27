@@ -18,7 +18,6 @@ I hope you enjoy, some weeks will be alot easier than others but I want to push 
 
   I gave up on the scrapping and data collection as it would produce to many irrelevant images so worked with the ready made cat and dog dataset. 
 
-
   Skills:
   - Python
   - fastai

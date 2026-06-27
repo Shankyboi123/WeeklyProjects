@@ -1,7 +1,28 @@
 # WorldHello
-This is a one year challnege I'm going to be embarking on where I will be completing one project every week. 
+This is a one year challenge I'm going to be embarking on where I will be completing one project every week. 
 
 I hope you enjoy, some weeks will be alot easier than others but I want to push myself to create one new thing every week.  
+
+#Week 4: 27th June
+- Image Classifier:
+  This week I started playing around with actual image classification instead of just using a ready-made API. The main notebook is a cat vs dog classifier using the Oxford-IIIT Pet dataset through fastai. I used the file names to label the images, built an `ImageDataLoaders` object, trained a ResNet34 vision learner, and tested predictions on sample images.
+
+  I also started a second notebook for a forest vs bird classifier. That one is more of a data collection experiment right now: I first tried DuckDuckGo image search, then pivoted to using `icrawler` with Google Image Crawler to download bird and forest images into separate folders.
+
+  Files:
+  - `Image_Classifier/catvsdog.ipynb` - fastai cat vs dog classifier
+  - `Image_Classifier/forestvsbird.ipynb` - image scraping/data collection for bird vs forest classifier
+
+  I gave up on the scrapping and data collection as it would produce to many irrelevant images so worked with the ready made cat and dog dataset. 
+
+
+  Skills:
+  - Python
+  - fastai
+  - Transfer learning
+  - Image classification
+  - Dataset loading and labelling
+  - Web image scraping
 
 #Week 3: June 22nd
 - Stock Visualizer:
@@ -42,5 +63,4 @@ I hope you enjoy, some weeks will be alot easier than others but I want to push 
   - Python
   - HTML + CSS
   - JavaScript 
-
 

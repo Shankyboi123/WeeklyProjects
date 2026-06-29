@@ -4,3 +4,10 @@ venv/
 
 # Environment variables
 .env
+
+# image classifier 
+model.pkl
+cat.jpg
+
+Image_Classifier/DogAndCatBreedClassifier
+

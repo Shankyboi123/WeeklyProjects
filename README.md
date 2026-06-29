@@ -5,29 +5,20 @@ I hope you enjoy, some weeks will be alot easier than others but I want to push 
 
 #Week 4: 27th June
 - Image Classifier:
-  This week I started playing around with actual image classification instead of just using a ready-made API. The main notebook is a cat vs dog classifier using the Oxford-IIIT Pet dataset through fastai. I used the file names to label the images, built an `ImageDataLoaders` object, trained a ResNet34 vision learner, and tested predictions on sample images.
+  Wanted to actually train a model this week instead of just calling someone elses API. Used the Oxford-IIIT Pet dataset through fastai and started simple, cats vs dogs. The dataset filenames have a quirk where cats start with a capital letter and dogs are lowercase, so wrote a quick function off that, trained a ResNet34 for one epoch and somehow ended up at 0.8% error rate. Yeah that felt pretty good.
 
-  Then I levelled it up with a cat and dog breed classifier. Instead of only checking whether the first letter of the filename was uppercase or lowercase, I used regex to pull the full breed name out of filenames like `Egyptian_Mau_167.jpg`. I built the dataloader with `ImageDataLoaders.from_name_re`, kept 20% of the data for validation, resized the images, used `lr_find()` to choose a learning rate, and fine-tuned a ResNet34 model for 3 epochs.
+  Then levelled it up to full breed classification across 37 breeds. Used regex to pull the breed name out of the filenames, ran lr_find() to find a decent learning rate, fine tuned for 3 epochs and got it down to around 4.4% error rate. Also picked up that if valid_loss starts climbing while train_loss keeps falling you've gone too far and the model is just memorising at that point.
 
-  I also started a second notebook for a forest vs bird classifier. That one is more of a data collection experiment right now: I first tried DuckDuckGo image search, then pivoted to using `icrawler` with Google Image Crawler to download bird and forest images into separate folders.
+  Also tried scraping my own dataset for a forest vs bird classifier but gave up on that, the images were way too noisy and irrelevant to be useful so stuck with the ready made dataset.
 
-  Files:
-  - `Image_Classifier/catvsdog.ipynb` - fastai cat vs dog classifier
-  - `Image_Classifier/CatDogBreeds.ipynb` - fastai cat/dog breed classifier using regex labels
-  - `Image_Classifier/forestvsbird.ipynb` - image scraping/data collection for bird vs forest classifier
-
-  I gave up on the scrapping and data collection as it would produce to many irrelevant images so worked with the ready made cat and dog dataset. 
+  Ended the week by deploying the breed model to Hugging Face with a Gradio interface so its actually live and has an API too.
 
   Skills:
   - Python
   - fastai
   - Transfer learning
-  - Image classification
-  - Dataset loading and labelling
   - Regex
-  - Learning rate tuning
-  - Model validation
-  - Web image scraping
+  - Gradio / Hugging Face
 
 #Week 3: June 22nd
 - Stock Visualizer:
